@@ -72,7 +72,7 @@ $(function() {
          * at least a single .entry element within the .feed container. 
          */
         it('the feed is not empty', function() {
-            expect($('.entry .feed')).toBeDefined();
+            expect($('.feed .entry')).toBeDefined();
         })
     });
 
@@ -86,11 +86,10 @@ $(function() {
         beforeEach(function(done) {
             loadFeed(0, function() {
                 feeds1.url = $('.entry-link');
-                done()
-            })
-            loadFeed(1, function() {
-                feeds2.url = $('.entry-link');
-                done()
+                loadFeed(1, function() {
+                    feeds2.url = $('.entry-link');
+                    done()
+                })
             });
         })
         it('feeds should be different', function() {

@@ -1,3 +1,9 @@
+# How to start application
+1. Download or cloe the repository
+2. Run index.html in your browser (Chrome recomended)
+3. The test results are located at the bottom of the page
+
+
 # Testing with Jasmine
 
 
