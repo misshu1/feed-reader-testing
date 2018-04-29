@@ -24,14 +24,14 @@ $(function() {
             allFeeds.forEach(function(feed) {
                 expect(feed.url).toBeDefined();
                 expect(feed.url.trim().length).not.toBe(0);
-            })
+            });
         });
 
         it('has an name defined and name is not empty', function() {
             allFeeds.forEach(function(feed) {
                 expect(feed.name.trim().length).not.toBe(0);
                 expect(feed.name).toBeDefined();
-            })
+            });
         });
     });
 
@@ -57,7 +57,7 @@ $(function() {
             expect($('body').hasClass('menu-hidden')).toBe(true);
 
 
-        })
+        });
     });
 
 
@@ -66,14 +66,14 @@ $(function() {
             loadFeed(0, function() {
                 done();
             })
-        })
+        });
 
         /* The loadFeed function is called and completes its work, there is 
          * at least a single .entry element within the .feed container. 
          */
         it('the feed is not empty', function() {
             expect($('.feed .entry')).toBeDefined();
-        })
+        });
     });
 
 
@@ -91,9 +91,9 @@ $(function() {
                     done()
                 })
             });
-        })
+        });
         it('feeds should be different', function() {
             expect(feeds1).not.toBe(feeds2);
-        })
-    })
+        });
+    });
 }());
