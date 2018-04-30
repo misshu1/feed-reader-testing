@@ -3,7 +3,7 @@
 2. Run index.html in your browser (Chrome recomended)
 3. The test results are located at the bottom of the page
 
- *Or use this link* https://misshu1.github.io/feed-reader-testing
+> Or use this link https://misshu1.github.io/feed-reader-testing
 
 # Testing with Jasmine
 
